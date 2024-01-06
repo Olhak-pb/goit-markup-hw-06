@@ -32,6 +32,7 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -73,6 +74,14 @@ body {
     align-items: center;
     margin-right: 232px;
 }
+
+@media only screen and (max-width: 767.98px) {
+    .navi {
+        margin-right: 0;
+        flex-grow: 1;
+    }
+}
+
 
 .full-logo {
     font-family: "Raleway", sans-serif;
@@ -118,7 +127,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    display: none;
+    border: none;
 }
 
 
@@ -227,7 +236,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #fff;
-    max-width: 288px;
+    max-width: 200px;
     margin:0 auto;
     font-weight: 700;
 }
@@ -747,6 +756,12 @@ body {
     }
 }
 
+
+
+.modal.is-open {
+    transform: translateX(0);
+}
+
 .footer-modal-par {
     margin-bottom: 16px;
     font-weight: 500;
@@ -1126,10 +1141,4 @@ position: absolute;
     display: flex;
     gap: 40px;
     margin-top: 48px;
-}
-
-.burger-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
