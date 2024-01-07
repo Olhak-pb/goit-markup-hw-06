@@ -72,8 +72,17 @@ body {
 }
 
 
+
+
+
 .header-container {
     display: flex;
+}
+
+@media (min-width: 1158px) {
+    .header-container {
+        max-width: 1440px;
+    }
 }
 
 .navi {
@@ -96,10 +105,10 @@ body {
 
 @media only screen and (min-width: 1158px) {
     .navi {
-            display: flex;
-            align-items: center;
-            margin-right: 232px;
-        }
+        display: flex;
+        align-items: center;
+        margin-right: 232px;
+    }
 }
 
 
@@ -134,7 +143,7 @@ body {
 @media only screen and (min-width: 768px) {
 .full-logo {
         padding: 17.5px 0;
-        margin-right: auto;
+        margin-right: 110px;
     }
 }
 
@@ -162,7 +171,11 @@ body {
     }
 }
 
-@media (min-width:768px) {}
+@media (min-width:768px) {
+    .menu {
+        margin-right: 110px;
+    }
+}
 
 @media (min-width: 1158px) {}
 
